@@ -1,0 +1,486 @@
+:root {
+    --primary: #7f5af0;
+    --bg: #0f0e17;
+    --text: #fffffe;
+    --accent: #ff8906;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 14, 23, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 999;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent);
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: var(--primary);
+  }
+  
+  .hero-text span {
+    color: var(--accent);
+  }
+  .hero-img img {
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* stronger shadow = depth */
+    border: 4px solid #ff8906;; /* change this to your theme accent color */
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05) rotate(1deg); /* tiny zoom & tilt on hover = modern af */
+}
+
+ 
+  
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tags span {
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.3rem;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .skill-tags span {
+    background: linear-gradient(45deg, #7f5af0, #ff8906);
+    padding: 0.6rem 1.2rem;
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .skill-tags span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--accent);
+  }
+  .cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .cert-card {
+    perspective: 1000px;
+    width: 200px;
+    height: 150px;
+  }
+  
+  .cert-card .front,
+  .cert-card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    font-weight: bold;
+    transition: transform 0.6s;
+  }
+  
+  .cert-card .back {
+    background: var(--accent);
+    transform: rotateY(180deg);
+  }
+  
+  .cert-card:hover .front {
+    transform: rotateY(180deg);
+  }
+  
+  .cert-card:hover .back {
+    transform: rotateY(360deg);
+  }
+  .contact {
+    background: rgba(127, 90, 240, 0.05);
+    border-top: 2px solid var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding: 4rem 2rem;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .contact h2 {
+    color: var(--accent);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: slideIn 0.8s ease-in-out;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  .contact-text a {
+    color: #ff8906;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-text a:hover {
+    color: var(--accent);
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .social-link {
+    color: white;
+    background: transparent;
+    border: 2px solid var(--accent);
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    background: var(--accent);
+    color: #0f0f0f;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent);
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .projects h2 {
+    color: var(--accent);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 280px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(127, 90, 240, 0.3);
+    box-shadow: 0 0 10px rgba(255, 137, 6, 0.1);
+    color: white;
+  }
+  
+  .project-card h3 {
+    font-size: 1.3rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccc;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 0 25px var(--accent);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .about-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 137, 6, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px var(--accent);
+  }
+  
+  .about-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 10px var(--accent);
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .about-img:hover {
+    transform: rotate(2deg) scale(1.05);
+  }
+  
+  .about-text {
+    max-width: 600px;
+    color: #ccc;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    animation: fadeSlide 0.8s ease;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    animation: fadeSlide 1s ease-in-out;
+  }
+  
+  .skill-pill {
+    display: inline-block;
+    background: rgba(255, 137, 6, 0.15); /* subtle background */
+    color: var(--accent); /* your theme color */
+    padding: 0.25rem 0.7rem;
+    margin: 0.2rem 0.25rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid var(--accent);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .skill-pill:hover {
+    background: var(--accent);
+    color: #0f0f0f;
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes bounceIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Shared button base */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.7rem;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Let's Talk - Glowing orange vibe */
+.btn-talk {
+  background: var(--accent);
+  color: #0f0f0f;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.btn-talk:hover {
+  background: #fff;
+  color: var(--accent);
+  box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);
+  transform: scale(1.05);
+  animation: pulseGlow 1s infinite alternate;
+}
+
+/* Resume Button - Transparent with border */
+.btn-resume {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+}
+
+.btn-resume:hover {
+  background: var(--accent);
+  color: #0f0f0f;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 10px var(--accent);
+  animation: floatUp 0.6s ease forwards;
+}
+
+/* Pulse animation for Let's Talk button */
+@keyframes pulseGlow {
+  from {
+    box-shadow: 0 0 10px var(--accent);
+  }
+  to {
+    box-shadow: 0 0 20px var(--accent), 0 0 30px var(--accent);
+  }
+}
+
+/* Smooth upward float for Resume */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-3px) scale(1.05);
+  }
+}
+/* Base style for both buttons */
+.btn {
+    padding: 0.9rem 1.7rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  /* Let's Talk button (solid accent color) */
+  .btn:first-child {
+    background: var(--accent, #ff8906);
+    color: #0f0f0f;
+    box-shadow: 0 0 10px var(--accent);
+  }
+  
+  .btn:first-child:hover {
+    background: #fff;
+    color: var(--accent);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--accent), 0 0 30px var(--accent);
+  }
+  
+  /* Resume button (outlined style) */
+  .btn.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 2px solid var(--accent);
+  }
+  
+  .btn.btn-outline:hover {
+    background: var(--accent);
+    color: #0f0f0f;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--accent);
+  }
+  
