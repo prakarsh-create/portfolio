@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prakarsh Srivastava — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-logo">PS</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-text animate-up">
+          <span class="hero-greeting">Hello, I'm</span>
+          <h1 class="hero-name">Prakarsh<br>Srivastava</h1>
+          <h2 class="hero-role">Python  Developer &amp; Data Analyst</h2>
+          <p class="hero-desc">
+            BCA (DSAI) student passionate about building scalable Python applications
+            and solving real-world problems using data analytics.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>5+</strong><span>Projects</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>2</strong><span>Certifications</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>BCA</strong><span>DSAI</span></div>
+          </div>
+        </div>
+        <div class="hero-image animate-up" style="animation-delay:.2s">
+          <div class="img-wrapper">
+            <img src="kinju1-removebg-preview.png" alt="Prakarsh Srivastava" />
+            <div class="img-ring"></div>
+            <div class="img-badge">Open to Work</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about" id="about">
+      <div class="section-inner">
+        <div class="section-tag">About Me</div>
+        <h2 class="section-title">Who I Am</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm Prakarsh Srivastava, a BCA student specialising in Data Science &amp; AI.
+              I enjoy the intersection of <em>clean code</em> and <em>meaningful data</em> —
+              building applications that are both technically sound and visually polished.
+            </p>
+            <p>
+              When I'm not writing Java or wrangling datasets in Python, I explore new
+              technologies, contribute to open-source, and document my learning journey.
+            </p>
+          </div>
+          <div class="about-cards">
+            <div class="about-card">
+              <div class="about-icon">💻</div>
+              <h4>Development</h4>
+              <p>Building robust back-end systems and clean REST APIs with Java &amp; Spring.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-icon">📊</div>
+              <h4>Data Analytics</h4>
+              <p>Transforming raw data into actionable insights using Python &amp; Pandas.</p>
+            </div>
+            <div class="about-card">
+              <div class="about-icon">🌐</div>
+              <h4>Web</h4>
+              <p>Crafting responsive, modern frontends with HTML, CSS &amp; JavaScript.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="projects" id="projects">
+      <div class="section-inner">
+        <div class="section-tag">Work</div>
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-sub">
+          Real-world problems tackled with data analysis and clean logic.
+        </p>
+
+        <!-- Featured Project -->
+        <div class="featured-project">
+          <div class="fp-header">
+            <span class="fp-label">Featured</span>
+            <h3>Employee Data Wrangling Project</h3>
+          </div>
+
+          <div class="data-metrics">
+            <div class="metric-box">
+              <h3>250+</h3>
+              <p>Total Employees</p>
+            </div>
+            <div class="metric-box">
+              <h3>₹45K</h3>
+              <p>Average Salary</p>
+            </div>
+            <div class="metric-box">
+              <h3>IT</h3>
+              <p>Top Department</p>
+            </div>
+            <div class="metric-box">
+              <h3>12%</h3>
+              <p>Attrition Rate</p>
+            </div>
+          </div>
+
+          <div class="fp-body">
+            <div class="project-block">
+              <h4>🔍 Problem</h4>
+              <p>
+                The employee dataset contained missing values, inconsistent formats,
+                and duplicate records — making analysis unreliable and error-prone.
+              </p>
+            </div>
+            <div class="project-block">
+              <h4>🛠 Approach</h4>
+              <p>
+                Cleaned the dataset by handling missing values, standardising formats,
+                and removing duplicates using Python-based data wrangling techniques.
+              </p>
+            </div>
+            <div class="project-block">
+              <h4>✅ Outcome</h4>
+              <p>
+                The final dataset was clean, consistent, and fully ready for
+                accurate analysis and downstream visualisation.
+              </p>
+            </div>
+          </div>
+
+          <div class="fp-footer">
+            <div class="tech-tags">
+              <span>Python</span>
+              <span>Pandas</span>
+              <span>Data Cleaning</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-sm btn-outline">View Code</a>
+              <a href="#" class="btn btn-sm btn-primary">Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- More Projects Grid -->
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="pc-icon">☕</div>
+            <h4>Java OOP Project</h4>
+            <p>Object-oriented library management system demonstrating SOLID principles and clean architecture.</p>
+            <div class="tech-tags small">
+              <span>Java</span><span>OOP</span>
+            </div>
+            <a href="#" class="card-link">View →</a>
+          </div>
+          <div class="project-card">
+            <div class="pc-icon">📈</div>
+            <h4>Sales Dashboard</h4>
+            <p>Interactive data dashboard visualising monthly sales trends and KPIs from CSV data.</p>
+            <div class="tech-tags small">
+              <span>Python</span><span>Matplotlib</span>
+            </div>
+            <a href="#" class="card-link">View →</a>
+          </div>
+          <div class="project-card">
+            <div class="pc-icon">🌐</div>
+            <h4>Portfolio Website</h4>
+            <p>This very portfolio — a fully responsive site built from scratch with vanilla HTML, CSS &amp; JS.</p>
+            <div class="tech-tags small">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="#" class="card-link">View →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATIONS ── -->
+    <section class="certifications" id="certifications">
+      <div class="section-inner">
+        <div class="section-tag">Credentials</div>
+        <h2 class="section-title">Certifications &amp;<br>Professional Development</h2>
+        <div class="cert-container">
+          
+          <div class="cert-card">
+            <div class="cert-issuer-logo">IBM</div>
+            <h3>IBM Data Science Professional Certificate</h3>
+            <p class="issuer">Issued by IBM</p>
+            <p class="description">
+              Practical knowledge in data analysis, Python, data visualisation,
+              machine learning fundamentals, and real-world project implementation.
+            </p>
+            <ul class="cert-skills">
+              <li>Python</li><li>Machine Learning</li><li>Data Viz</li>
+            </ul>
+            <a href="#" target="_blank" class="btn btn-primary">View Certificate</a>
+          </div>
+            
+          <div class="cert-card">
+            <div class="cert-issuer-logo">Tata </div>
+            <h3>Tata Data Visualization Certificate</h3>
+            <p class="issuer">Issued by Tata</p>
+            <p class="description">
+              Tata data visualization certificate program provided me with comprehensive training in data visualization techniques, tools, and best practices. I gained practical skills in creating compelling visual representations of data to effectively communicate insights and support data-driven decision-making.
+            </p>
+            
+            <ul class="cert-skills">
+              <li>HTML/CSS</li><li>JavaScript</li><li>Responsive Design</li>
+            </ul>
+            <a href="#" target="_blank" class="btn btn-primary">View Certificate</a>
+          </div>
+        </div>
+        <div class="cert-card">
+            <div class="cert-issuer-logo">Delloite </div>
+            <h3>Delloite Data Visualization Certificate</h3>
+            <p class="issuer">Issued by Delloite</p>
+            <p class="description">
+              Delloite data visualization certificate program provided me with comprehensive training in data visualization techniques, tools, and best practices. I gained practical skills in creating compelling visual representations of data to effectively communicate insights and support data-driven decision-making.
+            </p>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="skills" id="skills">
+      <div class="section-inner">
+        <div class="section-tag">Expertise</div>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <h4>Languages</h4>
+            <div class="skill-pills">
+              <span>Java</span><span>Python</span><span>SQL</span><span>HTML/CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Data &amp; Analytics</h4>
+            <div class="skill-pills">
+              <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Tools &amp; Platforms</h4>
+            <div class="skill-pills">
+              <span>Git</span><span>VS Code</span><span>IntelliJ IDEA</span><span>Jupyter</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h4>Soft Skills</h4>
+            <div class="skill-pills">
+              <span>Problem Solving</span><span>Communication</span><span>Team Work</span><span>Quick Learner</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="proficiency-bars">
+          <div class="prof-item">
+            <div class="prof-label"><span>Java</span><span>85%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="width:85%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-label"><span>Python / Pandas</span><span>80%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="width:80%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-label"><span>HTML / CSS</span><span>90%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="width:90%"></div></div>
+          </div>
+          <div class="prof-item">
+            <div class="prof-label"><span>SQL</span><span>70%</span></div>
+            <div class="prof-bar"><div class="prof-fill" style="width:70%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="contact" id="contact">
+      <div class="section-inner contact-inner">
+        <div class="contact-text">
+          <div class="section-tag">Get In Touch</div>
+          <h2 class="section-title">Let's Work Together</h2>
+          <p>
+            Have a project, internship opportunity, or just want to say hi?
+            My inbox is always open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:prakarshsrivastava444@gmail.com" class="contact-item">
+              <span class="ci-icon">✉</span> prakarshsrivastava444@gmail.com
+            </a>
+            <a href="https://www.linkedin.com/in/prakarsh-srivastava-66b38a31b/" target="_blank" class="contact-item">
+              <span class="ci-icon">in</span> linkedin.com/in/prakarsh
+            </a>
+            <a href="https://github.com/prakarsh-create" target="_blank" class="contact-item">
+              <span class="ci-icon">⌥</span> github.com/prakarsh
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-primary full-w">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Prakarsh Srivastava</div>
+      <p class="footer-sub">Python Developer &amp; Data Analyst · BCA (DSAI)</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Prakarsh Srivastava. Crafted with care.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const ham = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    ham.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      ham.classList.toggle('active');
+    });
+
+    // Sticky navbar shadow
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    // Animate proficiency bars on scroll
+    const bars = document.querySelectorAll('.prof-fill');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.style.width; // trigger CSS transition
+          e.target.classList.add('animated');
+        }
+      });
+    }, { threshold: 0.3 });
+    bars.forEach(b => { b.dataset.width = b.style.width; b.style.width = '0'; observer.observe(b); });
+
+    // Animate on scroll
+    const animEls = document.querySelectorAll('.animate-up, .cert-card, .project-card, .about-card, .skill-group');
+    const fadeObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('visible'));
+    }, { threshold: 0.15 });
+    animEls.forEach(el => { el.classList.add('fade-init'); fadeObs.observe(el); });
+  </script>
+</body>
+</html>
